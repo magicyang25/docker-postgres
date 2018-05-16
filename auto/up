@@ -1,0 +1,6 @@
+#! /bin/bash -e
+
+cd $(dirname $0)/..
+
+echo "Running docker"
+docker-compose -f docker-compose.yml run --rm -d postgres-10-3  

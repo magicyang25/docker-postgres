@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  postgres-10-3:
+    image: postgres:10.3
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./data-volume-10-3:/var/lib/postgresql/data

@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  postgres-11-4:
+    image: postgres:11.4
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./data-volume-11-4:/var/lib/postgresql/data

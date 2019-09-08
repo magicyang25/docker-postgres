@@ -3,4 +3,4 @@
 cd $(dirname $0)/..
 
 echo "Running docker"
-docker-compose -f docker-compose.yml down
+docker-compose -f docker-compose.11-4.yml down

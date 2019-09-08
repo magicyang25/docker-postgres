@@ -3,4 +3,4 @@
 APP_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." >/dev/null 2>&1 && pwd )"
 
 echo "Running docker"
-docker-compose -f $APP_ROOT/docker-compose.yml run --rm -d --service-ports postgres-11-4
+docker-compose -f $APP_ROOT/docker-compose.11-4.yml run --rm -d --service-ports postgres-11-4
